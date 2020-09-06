@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Annumity 애뉴미티</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/src/style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <button type="button" class="btn" style="position: relative; margin-top: 30px; z-index: 2;" onclick="location.href='index.html'">HOME</button>
+        <button type="button" class="btn" style="position: relative; margin-top: 30px; z-index: 2;" onclick="$('html, body').stop().animate({ scrollTop : '+=7000'});">ABOUT</button>
+        <div class="main_title">
+            <h1>애뉴미티 Annumity</h1>
+            <p>Anime community Annumity</p>
+        </div>
+
+        <div class="container">
+            <div id="row" class="row">
+                <% data.forEach((anime, i) => { %>
+                    <div class="col-md-3 col-sm-10" id="<%= i %>">
+                        <div class="card hover-shadow h-100 w-100 m-0">
+                            <img class="card-img-top" src="<%= anime.image %>" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= anime.title %></h5>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+
+        <div class="abouts">
+            <h1>ABOUT</h1>
+            <p>
+                애니메이션을 좋아하시는 분들을 위한 애니메이션 커뮤니티, '애뉴미티 Annumity' 입니다!<br>여러 애니메이션들과 간단한 줄거리들을 지원하고 있습니다!
+            </p>
+        </div>
+
+        <div class="end">
+            <h3>애니 커뮤니티 애뉴미티 Annumity</h3>
+            <p>COPYRIGHT ⓒ 2020 Annumity ALL RIGHTS RESERVED.</p>
+        </div>
+
+    </body>
+</html>
