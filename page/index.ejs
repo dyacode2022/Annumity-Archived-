@@ -19,10 +19,12 @@
 
         <div class="container">
             <div id="row" class="row">
+                <%# 이 작업은 사용자가 하는게 아니라 서버가 해주는거에요 %>
+                <%# 그래서 이 주석은 브라우저 개발자 도구에는 안보이죠! %>
                 <% data.forEach((anime, i) => { %>
                     <div class="col-md-3 col-sm-10" id="<%= i %>">
                         <div class="card hover-shadow h-100 w-100 m-0">
-                            <img class="card-img-top" src="<%= anime.image %>" alt="Card image cap">
+                            <img class="card-img-top" src="<%= anime.image %>" alt="저런! 이미지 서버가 터졌나봐요!">
                             <div class="card-body">
                                 <h5 class="card-title"><%= anime.title %></h5>
                             </div>
