@@ -1,0 +1,56 @@
+.titls {
+    text-align: center;
+    color: black;
+    background: rgb(236, 236, 236);
+}
+.titls h1 {
+    position: relative;
+    font-size: 3rem;
+    margin-top: -70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.titls p {
+    position: relative;
+    margin-top: -20px;
+    padding-bottom: 11px;
+}
+
+
+.text-animes {
+    color: white;
+}
+.text-animes h1{
+    position: relative;
+    margin-left: -500px;
+    padding-bottom: 150px;
+    left: 500px;
+    font-size: 4rem;
+    padding-top: 70px;
+    background: rgb(7, 7, 39);
+    padding-left: 460px;
+}
+.text-animes p {
+    position: relative;
+    margin-left: -500px;
+    left: 500px;
+    font-size: 1.5rem;
+    margin-top: -260px;
+    padding-top: 0px;
+    padding-left: 460px;
+}
+.text-animes h4 {
+    position: relative;
+    color: white;
+    margin-left: -500px;
+    left: 500px;
+    font-size: 1.2rem;
+    margin-top: 80px;
+    padding-top: 0px;
+    padding-left: 460px;
+}
+.image-container {
+    display: flex;
+    position: relative;
+    margin-top: -260px;
+}
