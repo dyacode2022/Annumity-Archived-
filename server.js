@@ -1,10 +1,10 @@
-const path = require('path').resolve() // __dirname은 더이상 표준이 아님!
+const path = require('path').resolve() // __dirname은 더이상 표준이 아님
 const express = require('express')
 const { renderFile: render } = require('ejs') // 렌더러
 const { get } = require('superagent') // 사이트 요청 하는거
 const cheerio = require('cheerio') // 크롤링 하는거
 
-// 혹시 나중에 url이 바뀔때를 대비해서...
+// 혹시 나중에 url이 바뀔때를 대비해서
 const baseurl = 'http://anime.onnada.com/good.php?at=&date=&month=&rate=&ct=&ct2=&c=&q=&p='
 const app = express()
 
@@ -43,5 +43,5 @@ app.get('/', (_, res) => {
 })
 
 app.use('/src', express.static(path + '/src')) // css, script 같은거
-app.use((_, res) => res.send('에잇! 잘못 왔거든요! 붸에<script>window.location.replace(\'/\')</script>')) // 404 메세지
+app.use((_, res) => res.send('잘못 오셨습니다!<script>window.location.replace(\'/\')</script>')) // 404 메세지
 app.listen(3000, () => console.log('http://localhost:3000 서버열림')) // 열기
